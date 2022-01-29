@@ -1,3 +1,3 @@
-#Pop Corntim
+#PopCorn Time
 
 a favorite movie list 
