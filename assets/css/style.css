@@ -1,3 +1,7 @@
+:root {
+    --grid-cols: 0;
+    --grid-rows: 0;
+  }
 .navbar{
    background-color: transparent;
 }
@@ -10,4 +14,13 @@
     border-radius: 0 5000px 5000px 0;
     font-size: 0.8rem;
   }
-  
+.main{
+    display: flex;
+    flex-wrap: wrap;
+    background-image: url("../../assets/images/main_bckg.png");
+    background-repeat: no-repeat;
+    background-size:100%;
+    height: 1300px;
+    width: 100%;
+    z-index: 0;
+}  
