@@ -20,7 +20,8 @@
     flex-wrap: wrap;
     background-image: url("../../assets/images/main_bckg.png");
     background-repeat: no-repeat;
-    background-size:100%;
+    background-size: cover;
+    background-position: center;
     height: 1300px;
     width: 100%;
     z-index: 0;
