@@ -1,7 +1,24 @@
+@import "normalize.css";
 :root {
     --grid-cols: 0;
     --grid-rows: 0;
   }
+  html, body {
+    height:100%;
+}  
+header{
+    flex: 1;
+    display:flex;
+    justify-content: flex-end;
+    background-color:rgb(35, 48, 67);
+    background-image: url('../../assets/images/title_banner_sm.png');  
+    padding-top:20%;
+    background-size:cover ;
+    background-repeat: no-repeat;
+    background-position:center;
+    width: 100%;
+    
+}  
 .navbar{
    background-color: transparent;
 }
@@ -14,15 +31,17 @@
     border-radius: 0 5000px 5000px 0;
     font-size: 0.8rem;
   }
-  
-.main{
+main{
     display: flex;
     flex-wrap: wrap;
+    flex-direction: column;
+    background-color:black;
     background-image: url("../../assets/images/main_bckg.png");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
+    background-attachment:unset;
     height: 1300px;
     width: 100%;
-    z-index: 0;
+    z-index: 0;   
 }  
