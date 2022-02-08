@@ -22,7 +22,6 @@
   <section class="title">
     <nav class="navbar is-transparent">
       <div class= "navbar-brand ">
-        <!--<img src="assets/images/logo_sm.png" alt="Popcorntime logo" class="image-is-square">-->
       </div>
       </div>  	
       <div class="navbar-menu">
@@ -40,14 +39,36 @@
 <!-- Search + Bar-->
 <main>
 <section>
-  <div class="columns is-mobile is-centered input-group input-group-rounded ">
+  <div class="columns is-mobile is-centered input-group input-group-rounded "id="searchBtn">
   <input class="input-group-field column is-three-fifths  " type="search" id="search-text" placeholder="Search Movies">
   <div class="input-group-button">
   <input type="submit" class="button secondary" value="Search">
   </div>
+  <a id="open-modal" href="">Open modal</a>
   </div>
 </section>
-<section id="flex-use" class=""> stuff here</section>
+<div class="modal">
+  <div class="modal-background"></div>
+  <div class="modal-content  has-text-white">
+    <img src="assets/images/error-popcorn-sm.png">
+    Your search did not find 
+    any movies in our Database
+  </div>
+  <button class="modal-close" aria-label="close"></button>
+  </div>
+<div>
+  <span>-----</span>
+</div>
+<section id="flex-use" class="columns"> 
+  <div class="column"></div>
+  <div id="container" class="column is-thre-quarters is-8">
+    <p> this is a long test to see where content goes</p>
+
+  </div>
+  <div class="column"></div>
+
+  </div>
+</section>
 </main>
 <footer>
 </footer>
