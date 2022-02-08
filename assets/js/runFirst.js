@@ -6,3 +6,16 @@ let Myfavs = [];
     searchedCities = JSON.parse(localStorage.getItem("citysearch"));
   }
 
+  var showTopMovies = function(movie) {
+    // format the github api url
+    var apiUrl = "https://imdb-api.com/en/API/MostPopularMovies/" + apiKimbd;
+  
+    // make a request to the url
+    fetch(apiUrl).then(function(response) {
+      response.json().then(function(data) {
+        console.log(data);
+      });
+    });
+  };
+  
+  showTopMovies();
