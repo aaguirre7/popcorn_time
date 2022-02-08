@@ -46,3 +46,7 @@ main{
     z-index: 0;   
 }  
 
+.footer{
+  background-color: rgb(140,18,13);
+  border-top: rgb(35, 48, 67);
+}
