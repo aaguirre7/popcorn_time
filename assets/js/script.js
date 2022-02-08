@@ -1,10 +1,8 @@
-<<<<<<< HEAD
 const mySearch = document.getElementById("#search-text");
 
 function movieSearch (){
     
 }
-=======
 import Foundation from  'https://cdn.jsdelivr.net/npm/foundation-sites@6.7.4/dist/js/foundation.min.js';
 const mySearch = document.getElementById("#search-text");
 var movieDetails ="";
@@ -33,4 +31,3 @@ $(function(searchNow) {
   });
 
 })
->>>>>>> abe
