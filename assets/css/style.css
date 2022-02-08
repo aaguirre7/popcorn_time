@@ -55,3 +55,7 @@ main{
   background-color: rgb(133,18,13);
   border-top: rgb(35, 48, 67);
 }
+.container {
+  display:block ;
+
+}
