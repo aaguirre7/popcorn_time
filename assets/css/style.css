@@ -45,4 +45,10 @@ main{
     width: 100%;
     z-index: 0;   
 }  
-
+footer{
+  background-color: rgb(140,18,13);
+  background-position:center;
+  width: 100%;
+  background-size:auto;
+  border-top: rgb(35, 48, 67);
+}
