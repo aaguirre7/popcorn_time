@@ -1,13 +1,101 @@
-<!DOCTYPE html>
+<!DOCTYPE html > 
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <link rel="icon" href="/assets/images/icon.ico">
+    <link rel="icon" href="assets/images/icon.ico">
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.3/css/bulma.min.css">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.9.3/css/bulma-rtl.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/foundation/6.7.4/css/foundation-float.min.css">
-    <link rel="stylesheet" href="/assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+    crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>    
     <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
+    
+    
 
     <title>Popcorn Time</title>
   </head>
+
+<body>
+    <!-- Header + Nav -->
+<header>
+  <section class="title">
+    <nav class="navbar is-transparent">
+      <div class= "navbar-brand ">
+      </div>
+      </div>  	
+      <div class="navbar-menu">
+          <!--<div class="navbar-start"> -->
+              <div class="navbar-end">
+                <a class="navbar-item has-text-white">Home</a>
+                <a class="navbar-item has-text-white" href="#">My Movies</a>
+                <a class="navbar-item has-text-white" href="#">FAQ</a>
+              </div>
+            <!--</div>-->
+        </div>
+      </nav>
+  </section>
+</header>
+<!-- Search + Bar-->
+<main>
+<section>
+  <div class="columns is-mobile is-centered input-group input-group-rounded"id="searchBtn">
+    <input class="input-group-field column is-three-fifths " type="text" id="search-text" placeholder="Search Movies">
+   <div class="input-group-button"> 
+    <button id="searchBtn" class="button secondary">Search</button>
+    <p id="demo"></p>
+    </div>      
+  </div>
+</section>
+<div class="modal">
+  <div class="modal-background"></div>
+  <div class="modal-content  has-text-white">
+    <img src="assets/images/error-popcorn-sm.png">
+    Your search did not find 
+    any movies in our Database
+  </div>
+  <button class="modal-close" aria-label="close"></button> 
+  </div>
+<div>
+  <br> <br>
+</div>
+<section id="flex-use section is-large" class="columns"> 
+  <div class="column"></div>
+  <div id="container" class="column is-four-fifths ">
+    <p id="movieContainer1"class = "is-inline-flex"></p>
+    <br>
+    <p id="movieContainer2" class = "is-inline-flex"></p>
+  </div>
+  <div class="column"></div>
+
+  </div>
+</section>
+</main>
+<script type="text/javascript" src="assets/js/runFirst.js"></script>
+<script type="text/javascript" src="assets/js/script.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/foundation-sites@6.7.4/dist/js/foundation.min.js" crossorigin="anonymous"></script>
+<footer class="columns is-mobile has-text-white">
+  <div class="column">
+    <H4>Made by the wonderful Team-2.0</H4>
+  </div>
+  <div class="column">
+    <ul><h4>
+      <li>Home</li>
+      <li href="#">My Movies</li>
+      <li href="#">FAQ</li>
+     </h4></ul>
+  </div>
+  <div class="column">
+       <h4><img src="assets/images/GitHub-logo.png" alt="GitHub" 
+        href="https://github.com/aaguirre7/popcorn_time">Follow us on GitHub </h4>
+  </div>
+  <div class="column">
+       <h5>COPYRIGHT POPCORN TIME 2022 ALL RIGHTS RESERVED</h5>
+  </div>
+</footer>
+</body>
+
+ 
+</html>
