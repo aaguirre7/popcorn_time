@@ -1,25 +1,23 @@
 const apiKimbd = "k_4s8hgj73";
 const apiKwmode = "h2LXbCztIcaw7kZ2ENKOWBrMpS0TnqoOccCqFF58";
 
-let Myfavs = [];
-  if( localStorage.getItem("myMovies")){
-    searchedCities = JSON.parse(localStorage.getItem("citysearch"));
-  }
 
-  var showTopMovies = function(movie) {
-    // format the github api url
-    var apiUrl = "https://imdb-api.com/en/API/MostPopularMovies/" + apiKimbd;
-  
-    // make a request to the url
-    fetch(apiUrl).then(function(response) {
-      response.json().then(function(data) {
-      });
-    });
-  };
-  
-  showTopMovies();
+var requestOptions = {
+  method: 'GET',
+  redirect: 'follow'
+};
+ 
+fetch('https://imdb-api.com/en/API/MostPopularMovies/k_4s8hgj73', requestOptions)
+  .then(response => response.json())
+  .then(response => {
+    const list = response.data;
 
-  var displayRepos = function(repos, searchTerm) {
-    console.log(repos);
-    console.log(searchTerm);
-  };
+    list.map((items) => {
+      const name = items.title;
+      const poster = items.image;
+      const movie = `<li><img src=$`
+    })
+  })
+  .catch(error => {
+    console.log('error', error);
+  });
