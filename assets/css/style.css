@@ -45,6 +45,13 @@ main{
     width: 100%;
     z-index: 0;   
 }  
+
+div > p {
+  object-fit: contain;
+  height: 100%;
+  width: 100%;
+}
+
 footer{
   background-color: rgb(140,18,13);
   background-position:center;
@@ -52,3 +59,4 @@ footer{
   background-size:auto;
   border-top: rgb(35, 48, 67);
 }
+
