@@ -7,18 +7,30 @@ $(document).ready(function(){
       console.log(mySearch);
       $.ajax({url:`https://imdb-api.com/en/API/SearchMovie/${apiKimbd}/${mySearch}`,
       success: function(result){
-         $("#container").html("");
+         $("#movieContainer").html("");
+         myMovie: result.title;
+         moImg: result.image;
+         moId: result.id;
+         fetch('https://imdb-api.com/en/API/MostPopularMovies/'+apiKimbd+'')
+        .then((response) => response.json())
+        .then((data) => {
+
         console.log(result);
-        $("#container").append(`<div class="row time-block" data-time="">
-        <div class="col-sm col-md-2 hour">
-                <p>AM</p>
+        $("#movieContainer").append(`<div id="movieContainer" class="column ">
+        <div class="columns is-multiline is-vcentered">
+          <div class="column is-full-size">
+            <h4></h4>
+          </div>
+          
+          <div class="column">
+            <img src="">
+          </div>
+          <div  class="column is-8 ">
+            
+          </div>
+      
         </div>
-        <div class="col-sm co;-md-8 d-flex description">
-            <textarea></textarea>
-        </div><div class="col-sm con-md-2 saveBtn">
-                <i class="far fa-save fa-2x"></i>
-            </div></>
-        </div>`);
+      </div>`);
       },
       error:function(){
         document.querySelector('a#open-modal').addEventListener('click', function(event) {
