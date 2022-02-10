@@ -43,20 +43,23 @@ main{
 }  
 
 p {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  position: relative;
-  width: 100%;
-  align-items: stretch;
-
+flex-grow: initial;
+flex-shrink:unset;
+flex-basis: 0px;
+display: flex;
+text-align: center;
+text-rendering: auto;
 }
 
 footer{
   background-color: rgb(140,18,13);
   background-position:center;
   width: 100%;
-  background-size:auto;
+  background-size: contain cover;
   border-top: rgb(35, 48, 67);
 }
 
+footer.column{
+  margin-left: 0%;
+  margin-right: 0%;
+}
