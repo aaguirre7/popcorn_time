@@ -1,9 +1,5 @@
 @import "normalize.css";
-:root {
-    --grid-cols: 0;
-    --grid-rows: 0;
-  }
-  html, body {
+html, body {
     height:100%;
 }  
 header{
@@ -27,7 +23,7 @@ header{
     padding-left: 1rem;
   }
   
-  .input-group-rounded .input-group-button .button {
+.input-group-rounded .input-group-button .button {
     border-radius: 0 5000px 5000px 0;
     font-size: 0.8rem;
   }
