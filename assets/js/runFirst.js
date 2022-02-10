@@ -1,4 +1,4 @@
-const apiKimbd = "k_4s8hgj73";
+const apiKimbd = "k_v1dz4jc0";
 const apiKwmode = "h2LXbCztIcaw7kZ2ENKOWBrMpS0TnqoOccCqFF58";
 
 let Myfavs = [];
