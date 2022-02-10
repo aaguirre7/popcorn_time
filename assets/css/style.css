@@ -60,7 +60,7 @@ footer{
   border-top: rgb(35, 48, 67);
 }
 
-/* #movieContainer{
+#movieContainer{
   display: flex;
   flex-grow: unset;
   flex-shrink:inherit;
@@ -72,7 +72,6 @@ footer{
   box-sizing: content-box;
   width: inherit;
 }
-*/
 
 footer.columns{
   margin-left: 0%;
