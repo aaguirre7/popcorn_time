@@ -9,6 +9,16 @@ $(document).ready(function(){
       success: function(result){
          $("#container").html("");
         console.log(result);
+        $("#container").append(`<div class="row time-block" data-time="">
+        <div class="col-sm col-md-2 hour">
+                <p>AM</p>
+        </div>
+        <div class="col-sm co;-md-8 d-flex description">
+            <textarea></textarea>
+        </div><div class="col-sm con-md-2 saveBtn">
+                <i class="far fa-save fa-2x"></i>
+            </div></>
+        </div>`);
       },
       error:function(){
         document.querySelector('a#open-modal').addEventListener('click', function(event) {
