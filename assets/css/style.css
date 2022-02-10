@@ -48,3 +48,15 @@ footer{
   background-size:auto;
   border-top: rgb(35, 48, 67);
 }
+
+#movieContainer{
+  display: flex;
+  flex-grow: unset;
+  justify-content: center;
+  align-items: flex-end;
+  flex-direction: column;
+  align-content: center;
+  text-align: center;
+  box-sizing: content-box;
+  width: inherit;
+}

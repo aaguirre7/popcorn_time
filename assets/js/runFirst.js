@@ -1,4 +1,4 @@
-const apiKimbd = "k_x9h3qobd";
+const apiKimbd = "k_4s8hgj73";
 const apiKwmode = "h2LXbCztIcaw7kZ2ENKOWBrMpS0TnqoOccCqFF58";
 
 let Myfavs = [];
@@ -8,36 +8,41 @@ let Myfavs = [];
   
   var container1 = document.getElementById("movieContainer1");
   var container2 = document.getElementById("movieContainer2");
-  
-  fetch('https://imdb-api.com/en/API/MostPopularMovies/k_x9h3qobd')
+  var imgTag ="";
+  var rateTag ="";
+  var titleTag = "";
+  fetch('https://imdb-api.com/en/API/MostPopularMovies/'+apiKimbd+'')
       .then((response) => response.json())
       .then((data) => {
           console.log('data:', data);
           const list = data.items;
           console.log('list:', list);
-  
+          $("#movieContainer").append(`<div id="movies1" class="columns is-centered "></div>
+          <div id="movies2" class="columns is-centered "></div>`);
           for (let i = 0; i < 10; i++) {
             if(i <= 4) {
-              var imgTag = document.createElement("img");
-              imgTag.setAttribute("src", list[i].image);
-              container1.appendChild(imgTag);
-               
-              var pTag = document.createElement("p");
-              pTag.textContent = list[i].title + " (" + list[i].imDbRating + ")";
-              container1.appendChild(pTag);
-              
+               imgTag = list[i].image;
+               titleTag = list[i].title;
+               rateTag = list[i].imDbRating;
+               $("#movies1").append(`<div class="column box"> 
+                   <img src=${imgTag} alt=${titleTag}>
+                   <p>${titleTag}</p>
+               </div>`);
             }else {
-              var imgTag = document.createElement("img");
-              imgTag.setAttribute("src", list[i].image);
-              container2.appendChild(imgTag);
-          
-              var pTag = document.createElement("p");
-              pTag.textContent = list[i].title + " (" + list[i].imDbRating + ")";
-              container2.appendChild(pTag);
-              
+              imgTag = list[i].image;
+              titleTag = list[i].title;
+              rateTag = list[i].imDbRating;
+              $("#movies2").append(`<div class="column box"> 
+                  <img src=${imgTag} alt=${titleTag}>
+                  <p>${titleTag}</p>
+              </div>`);
             }
           }
-      })
+          console.log(imgTag);
+          console.log(titleTag);
+          console.log(rateTag);
+
+    })
       .catch(error => {
           console.log('error', error);
       });
