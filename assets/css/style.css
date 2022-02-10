@@ -1,26 +1,148 @@
-:root {
-    --grid-cols: 0;
-    --grid-rows: 0;
-  }
+@import "normalize.css";
+html, body {
+    height:100%;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+
+
+}  
+header{
+    flex: 1;
+    display:flex;
+    justify-content: flex-end;
+    background-color:rgb(35, 48, 67);
+    background-image: url('../../assets/images/title_banner_sm.png');  
+    padding-top:20%;
+    background-size:cover ;
+    background-repeat: no-repeat;
+    background-position:center;
+    width: 100%;
+    
+}  
+
+/*.title {
+  text-decoration: none;
+  color: white;
+  padding: 1rem;
+  display: block;
+
+}*/
+
 .navbar{
    background-color: transparent;
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   color: white;
 }
+
+.navbar-links ul {
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+
+.navbar-links li {
+  list-style: none;
+}
+
+.navbar-links li a{
+  text-decoration: none;
+  color: white;
+  padding: 1rem;
+  display: block;
+}
+
+/*.navbar-links li:hover {
+  background-color: #555;
+  border-radius: 10px;
+  
+}*/
+
+.toggle-button {
+  position: absolute;
+  top: .75rem;
+  right: 1rem;
+  display: none;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 30px;
+  height: 21px;
+}
+
+.toggle-button .bar {
+  height: 3px;
+  width: 100%;
+  background-color: white;
+  border-radius: 10px;
+}
+
+@media (max-width: 600px) {
+  .toggle-button {
+    display: flex;
+  }
+
+  .navbar-links {
+    display: none;
+    width: 100%;
+  }
+
+  .navbar {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .navbar-links ul {
+    width: 100%;
+    flex-direction: column;
+  }
+
+  .navbar-links li {
+    text-align: right;
+  }
+  
+  .navbar-links li a {
+  
+    padding-bottom: 15px;
+  }
+
+  .navbar-links.active {
+    display: flex;
+  }
+}
+
+
 .input-group-rounded .input-group-field {
     border-radius: 5000px 0 0 5000px;
     padding-left: 1rem;
   }
   
-  .input-group-rounded .input-group-button .button {
+.input-group-rounded .input-group-button .button {
     border-radius: 0 5000px 5000px 0;
     font-size: 0.8rem;
   }
-.main{
+main{
     display: flex;
     flex-wrap: wrap;
+    flex-direction: column;
+    background-color:black;
     background-image: url("../../assets/images/main_bckg.png");
     background-repeat: no-repeat;
-    background-size:100%;
+    background-size: cover;
+    background-position: center;
+    background-attachment:unset;
     height: 1300px;
     width: 100%;
-    z-index: 0;
+    z-index: 0;   
 }  
+footer{
+  background-color: rgb(140,18,13);
+  background-position:center;
+  width: 100%;
+  background-size:auto;
+  border-top: rgb(35, 48, 67);
+  
+}
+
+
