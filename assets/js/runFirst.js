@@ -5,7 +5,7 @@ const apiKwmode = "h2LXbCztIcaw7kZ2ENKOWBrMpS0TnqoOccCqFF58";
 var container1 = document.getElementById("movieContainer1");
 var container2 = document.getElementById("movieContainer2");
 
-fetch('https://imdb-api.com/en/API/MostPopularMovies/k_7hu44uii')
+fetch('https://imdb-api.com/en/API/MostPopularMovies/k_x9h3qobd')
     .then((response) => response.json())
     .then((data) => {
         console.log('data:', data);

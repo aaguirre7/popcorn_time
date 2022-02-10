@@ -46,10 +46,14 @@ main{
     z-index: 0;   
 }  
 
-div > p {
-  object-fit: contain;
-  height: 100%;
+p {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  position: relative;
   width: 100%;
+  align-items: stretch;
+
 }
 
 footer{
