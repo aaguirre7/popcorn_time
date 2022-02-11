@@ -30,27 +30,15 @@ header{
   }
 main{
     display: flex;
-    flex-wrap: wrap;
     flex-direction: column;
     background-color:black;
     background-image: url("../../assets/images/main_bckg.png");
     background-repeat: no-repeat;
-    background-size: cover;
+    background-size:cover;
     background-position: center;
     background-attachment:unset;
     height: 145rem;
-    width: 100%;
-    z-index: 0;   
 }  
-
-p {
-flex-grow: initial;
-flex-shrink:unset;
-flex-basis: 0px;
-display: flex;
-text-align: center;
-text-rendering: auto;
-}
 
 footer{
   background-color: rgb(140,18,13);
@@ -61,7 +49,9 @@ footer{
 }
 #mymovies{
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-around;
+  margin-top:3rem;
 }
 
 footer.columns{
