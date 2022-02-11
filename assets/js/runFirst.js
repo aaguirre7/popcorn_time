@@ -8,7 +8,7 @@ const apiKwmode = "h2LXbCztIcaw7kZ2ENKOWBrMpS0TnqoOccCqFF58";
   var imgTag ="";
   var rateTag ="";
   var titleTag = "";
-  fetch('https://imdb-api.com/en/API/MostPopularMovies/k_4s8hgj73'+apiKimbd+'')
+  fetch('https://imdb-api.com/en/API/MostPopularMovies/'+apiKimbd+'')
       .then((response) => response.json())
       .then((data) => {
           console.log('data:', data);
@@ -45,30 +45,4 @@ const apiKwmode = "h2LXbCztIcaw7kZ2ENKOWBrMpS0TnqoOccCqFF58";
       })
 
 
-      $(function(){
-        $("#ADD").on("click", function(){
-              
-           try {
-             $(this).attr('disabled',true);
-             
-             var data= $(this).closest("p").attr("id"); 
-             var Myfavs=JSON.parse(localStorage.getItem("favprop"));
-             if (favprop == null){
-               Myfavs =[];
-             
-              }
-             if(Myfavs !=null){
-               for (var j =0; j <Myfavs.length; j++){
-                
-                  if (data == Myfavs [j]){
-
-                       alert("this property is already in your fav");
-                       Myfavs =[]
-
-                  }
-                }
-              }
-
-            }
-          
-      
+   

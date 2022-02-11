@@ -18,6 +18,7 @@ header{
 .navbar{
    background-color: transparent;
 }
+
 .input-group-rounded .input-group-field {
     border-radius: 5000px 0 0 5000px;
     padding-left: 1rem;
@@ -41,17 +42,28 @@ main{
     width: 100%;
     z-index: 0;   
 }  
+
+p {
+flex-grow: initial;
+flex-shrink:unset;
+flex-basis: 0px;
+display: flex;
+text-align: center;
+text-rendering: auto;
+}
+
 footer{
   background-color: rgb(140,18,13);
   background-position:center;
   width: 100%;
-  background-size:auto;
+  background-size: contain cover;
   border-top: rgb(35, 48, 67);
 }
 
 #movieContainer{
   display: flex;
   flex-grow: unset;
+  flex-shrink:inherit;
   justify-content: center;
   align-items: flex-end;
   flex-direction: column;
@@ -59,4 +71,9 @@ footer{
   text-align: center;
   box-sizing: content-box;
   width: inherit;
+}
+
+footer.columns{
+  margin-left: 0%;
+  margin-right: 0%;
 }
