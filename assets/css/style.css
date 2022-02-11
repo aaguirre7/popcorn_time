@@ -38,7 +38,7 @@ main{
     background-size: cover;
     background-position: center;
     background-attachment:unset;
-    height: 1300px;
+    height: 145rem;
     width: 100%;
     z-index: 0;   
 }  
@@ -59,18 +59,9 @@ footer{
   background-size: contain cover;
   border-top: rgb(35, 48, 67);
 }
-
-#movieContainer{
+#mymovies{
   display: flex;
-  flex-grow: unset;
-  flex-shrink:inherit;
-  justify-content: center;
-  align-items: flex-end;
-  flex-direction: column;
-  align-content: center;
-  text-align: center;
-  box-sizing: content-box;
-  width: inherit;
+  justify-content: space-around;
 }
 
 footer.columns{

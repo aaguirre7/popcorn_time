@@ -5,9 +5,6 @@ let Myfavs = [];
   if( localStorage.getItem("myMovies")){
     searchedCities = JSON.parse(localStorage.getItem("citysearch"));
   } 
-  
-  var container1 = document.getElementById("movieContainer1");
-  var container2 = document.getElementById("movieContainer2");
   var imgTag ="";
   var rateTag ="";
   var titleTag = "";
@@ -17,30 +14,24 @@ let Myfavs = [];
           console.log('data:', data);
           const list = data.items;
           console.log('list:', list);
-          $("#movieContainer").append(`<div id="movies1" class="columns is-centered "></div>
-          <div id="movies2" class="columns is-centered "></div>`);
-          for (let i = 0; i < 10; i++) {
-            if(i <= 4) {
-               imgTag = list[i].image;
-               titleTag = list[i].title;
-               rateTag = list[i].imDbRating;
-               $("#movies1").append(`<div class="column box"> 
-                   <img src=${imgTag} alt=${titleTag}>
-                   <p>${titleTag}</p>
-               </div>`);
-            }else {
-              imgTag = list[i].image;
-              titleTag = list[i].title;
-              rateTag = list[i].imDbRating;
-              $("#movies2").append(`<div class="column box"> 
-                  <img src=${imgTag} alt=${titleTag}>
-                  <p>${titleTag}</p>
-              </div>`);
-            }
+          for (let i = 0 , x = 5; i < 5; i++ , x ++) {
+               $($("#movieContainer")).append(`<div class="tile is-parent is-vertical">
+               <article class="tile is-child box is-info">
+                   <figure class="image">
+                   <img src="${list[i].image}">
+                   </figure>
+                   <p class="title is-4">${list[i].fullTitle}</p>
+                   <p class="subtitle">Rating:${list[i].imDbRating}</p>
+               </article>
+               <article class="tile is-child box is-info">
+                   <figure class="image">
+                       <img src="${list[x].image}">
+                   </figure>
+                   <p class="title is-4">${list[x].fullTitle}</p>
+                   <p class="subtitle">Rating:${list[x].imDbRating}</p> 
+               </article>
+           </div>`)
           }
-          console.log(imgTag);
-          console.log(titleTag);
-          console.log(rateTag);
 
     })
       .catch(error => {
