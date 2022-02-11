@@ -30,27 +30,15 @@ header{
   }
 main{
     display: flex;
-    flex-wrap: wrap;
     flex-direction: column;
     background-color:black;
     background-image: url("../../assets/images/main_bckg.png");
     background-repeat: no-repeat;
-    background-size: cover;
+    background-size:cover;
     background-position: center;
     background-attachment:unset;
-    height: 1300px;
-    width: 100%;
-    z-index: 0;   
+    height: 145rem;
 }  
-
-p {
-flex-grow: initial;
-flex-shrink:unset;
-flex-basis: 0px;
-display: flex;
-text-align: center;
-text-rendering: auto;
-}
 
 footer{
   background-color: rgb(140,18,13);
@@ -59,18 +47,11 @@ footer{
   background-size: contain cover;
   border-top: rgb(35, 48, 67);
 }
-
-#movieContainer{
+#mymovies{
   display: flex;
-  flex-grow: unset;
-  flex-shrink:inherit;
-  justify-content: center;
-  align-items: flex-end;
-  flex-direction: column;
-  align-content: center;
-  text-align: center;
-  box-sizing: content-box;
-  width: inherit;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  margin-top:3rem;
 }
 
 footer.columns{

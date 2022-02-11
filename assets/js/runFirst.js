@@ -1,5 +1,5 @@
 const apiKimbd = "k_4s8hgj73";
-const apiKwmode = "h2LXbCztIcaw7kZ2ENKOWBrMpS0TnqoOccCqFF58";
+const apiKwmode = "grNQT3JM71oDY92KK9jI0edlD2kYxoLdykcDEDiN";
 
 
   
@@ -8,7 +8,8 @@ const apiKwmode = "h2LXbCztIcaw7kZ2ENKOWBrMpS0TnqoOccCqFF58";
   var imgTag ="";
   var rateTag ="";
   var titleTag = "";
-  fetch('https://imdb-api.com/en/API/MostPopularMovies/'+apiKimbd+'')
+       //I switched my api key and the link//
+  fetch('https://api.watchmode.com/v1/sources/?apiKey='+apiKwmode+'')
       .then((response) => response.json())
       .then((data) => {
           console.log('data:', data);
@@ -21,6 +22,7 @@ const apiKwmode = "h2LXbCztIcaw7kZ2ENKOWBrMpS0TnqoOccCqFF58";
                imgTag = list[i].image;
                titleTag = list[i].title;
                rateTag = list[i].imDbRating;
+               
                $("#movies1").append(`<div class="column box"> 
                    <img src=${imgTag} alt=${titleTag}>
                    <p>${titleTag}</p>

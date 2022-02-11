@@ -1,4 +1,3 @@
-
 $(document).ready(function(){
   $("button").click(function(){
     console.log("this ran");
@@ -8,18 +7,18 @@ $(document).ready(function(){
       var imgTag ="";
       var rateTag ="";
       var titleTag = "";
-      fetch('https://imdb-api.com/en/API/SearchMovie/'+apiKimbd+'/'+mySearch+'')
+      fetch('https://api.watchmode.com/v1/sources/?apiKey='+apiKwmode+'/'+mySearch+'')
         .then((response) => response.json())
         .then((data) => {
           console.log('data:', data);
-          const list = data.items;
+          const list = data;
           console.log('list:', list);
           $("#movieContainer").append(`<div id="movies1" class="columns is-centered "></div>
           <div id="movies2" class="columns is-centered "></div>`);
             if(data.items >= 1) {
-               imgTag = list[i].image;
-               titleTag = list[i].title;
-               rateTag = list[i].imDbRating;
+               imgTag = list.image;
+               titleTag = list.title;
+               rateTag = list.imDbRating;
                $("#movies1").append(`<div class="column box"> 
                    <img src=${imgTag} alt=${titleTag}>
                    <p>${titleTag}</p>
@@ -41,3 +40,12 @@ $(document).ready(function(){
           })
   })
 })
+
+
+const nav = document.querySelector("#navbar-menu");
+const burger = document.querySelector("#burger");
+
+burger.addEventListener('click', ()=> {
+    nav.classList.toggle("is-active")
+    burger.classList.toggle("is-active")
+});
