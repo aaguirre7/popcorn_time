@@ -70,8 +70,11 @@ function searchError(){
         $("#movieContainer").html('');
          $("#movieContainer").append(`<div class="tile is-parent"> 
                 <article class="tile is-child box is-info">
-                  <figure id="poster" class="image">
-                    <img src="https://imdb-api.com/en/API/Report/${apiKimbd}/${movie}">
+                  <figure id="poster" class="image joceyln">
+                    <img src="https://imdb-api.com/en/API/Report/${apiKimbd}/${movie}"
+                    width:'auto'
+                    height: 'auto'
+                    style="width: auto; height: 75rem;">
                   </figure>
                 </article>
               </div>`)      

@@ -16,6 +16,13 @@ header{
     
 }  
 
+@media screen and (max-width: 1023px){
+  .navbar-menu{
+  background-color: black;
+  }
+}
+
+
 .navbar{
    background-color: transparent;
 }
