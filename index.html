@@ -21,19 +21,25 @@
     <!-- Header + Nav -->
 <header>
   <section class="title">
-    <nav class="navbar is-transparent">
-      <div class= "navbar-brand ">
+    <nav class="navbar" role="navigation" aria-label="main navigation" id="nav-bar">
+      <div class="navbar-brand">
+        <a class="navbar-item" href="index.html">
+          <img src="" alt="" width="" height="">
+        </a>
+    
+        <a role="button" id="burger" class="navbar-burger">
+          <span aria-hidden="true"></span>
+          <span aria-hidden="true"></span>
+          <span aria-hidden="true"></span>
+        </a>
       </div>
-      </div>  	
-      <div class="navburger-menu">
-          <!--<div class="navbar-start"> -->
-              <div class="navbar-end">
-                <a class="navbar-item has-text-white">Home</a>
-                <a class="navbar-item has-text-white" href="#">My Movies</a>
-              </div>
-            <!--</div>-->
+      <div id="navbar-menu" class="navbar-menu">
+        <div class="navbar-start has-text-right">
+          <a href="index.html" class="navbar-item has-text-white"> Home</a>
+          <a href="" class="navbar-item has-text-white"> My Favorites</a>
         </div>
-      </nav>
+      </div>
+    </nav>
   </section>
 </header>
 <!-- Search + Bar-->
@@ -46,6 +52,16 @@
     </div>      
   </div>
 </section>
+<div class="modal">
+  <div class="modal-background"></div>
+  <div class="modal-content  has-text-white">
+    <img src="assets/images/error-popcorn-sm.png">
+    Your search did not find 
+    any movies in our Database
+  </div>
+  <button class="modal-close" aria-label="close"></button> 
+  </div>
+<div>
 <section id="flex-use"> 
   <div id="mymovies" class="tile is-ancestor">
       <div class="tile is-vertical is-11">

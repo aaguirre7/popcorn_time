@@ -7,6 +7,8 @@ $(document).ready(function(){
       var imgTag ="";
       var rateTag ="";
       var titleTag = "";
+      
+         //I switched the url and link for here too// 
       fetch('https://api.watchmode.com/v1/sources/?apiKey='+apiKwmode+'/'+mySearch+'')
         .then((response) => response.json())
         .then((data) => {
