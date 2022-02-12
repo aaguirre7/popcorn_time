@@ -60,3 +60,9 @@ footer.columns{
   margin-left: 0%;
   margin-right: 0%;
 }
+#burger{
+  background-color: transparent;
+}
+#poster{
+  clip-rule: nonzero;
+}
