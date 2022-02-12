@@ -23,7 +23,7 @@ function loadHome (){
                    <img src="${list[i].image}">
                    </figure>
                    <p class="title is-4">${list[i].title}</p>
-                   <p class="subtitle">Release Year:${list[i].description}</p>
+                   <p class="subtitle">Release Year:${list[i].imDbRating}</p>
                    <script type="text/javascript">
                      $(document).ready(function() {
                          $("#${list[i].id}").click(function(){
@@ -32,12 +32,12 @@ function loadHome (){
                      });
                    </script>
                </article>
-               <article id="${list[i].id}" class="tile is-child box is-info">
+               <article id="${list[i].id}" class="tile is-child box is-info ">
                    <figure class="image">
                        <img src="${list[x].image}">
                    </figure>
                    <p class="title is-4">${list[x].title}</p>
-                   <p class="subtitle">Release Year:${list[x].description}</p>
+                   <p class="subtitle">Release Year:${list[x].imDbRating}</p>
                    <script type="text/javascript">
                      $(document).ready(function() {
                          $("#${list[x].id}").click(function(){

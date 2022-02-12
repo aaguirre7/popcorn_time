@@ -31,7 +31,7 @@ $(document).ready(function(){
                       });
                       </script>
                 </article>
-                <article id="${list[i].id}" class="tile is-child box is-info">
+                <article id="${list[i].id}" class="tile is-child box is-info ">
                     <figure class="image">
                         <img src="${list[x].image}">
                     </figure>
