@@ -8,16 +8,17 @@ $(document).ready(function(){
         .then((response) => response.json())
         .then((data) => {
           const list = data.results;
-          var listSize =Object.keys(data.results).length; 
+          var listSize =(Object.keys(data.results).length); 
           console.log(listSize);
           console.log('list:', list);
         
      if ((mySearch == "" , listSize == 0)){
        searchError(event);
      }else {
+
       $("#movieContainer").html('');
-       for (let i = 0 ,  x = (listSize / 2); x < listSize  ; i ++, x ++){
-        $($("#movieContainer")).append(`<div class="tile is-parent is-vertical">
+       for (let i = 0 ,  x = Math.ceil((listSize / 2)); x < listSize  ; i ++, x ++){
+        $("#movieContainer").append(`<div class="tile is-parent is-vertical">
                <article class="tile is-child box is-info">
                    <figure class="image">
                    <img src="${list[i].image}">
@@ -32,7 +33,8 @@ $(document).ready(function(){
                    <p class="title is-4">${list[x].title}</p>
                    <p class="subtitle">Release Year:${list[x].description}</p> 
                </article>
-           </div>`)
+           </div>`);
+           console.log(x)
         }
         }
       });
