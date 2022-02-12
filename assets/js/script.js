@@ -16,7 +16,7 @@ $(document).ready(function(){
        searchError(event);
      }else {
       $("#movieContainer").html('');
-       for (let i = 0 ,  x = (listSize / 2); x < listSize  ; i ++, x ++){
+       for (let i = 0 ,  x = (listSize / 2) - 1; x < listSize  ; i ++, x ++){
         $($("#movieContainer")).append(`<div class="tile is-parent is-vertical">
                <article class="tile is-child box is-info">
                    <figure class="image">
