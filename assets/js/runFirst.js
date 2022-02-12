@@ -5,9 +5,7 @@ let Myfavs = [];
   if( localStorage.getItem("myMovies")){
     searchedCities = JSON.parse(localStorage.getItem("citysearch"));
   } 
-  var imgTag ="";
-  var rateTag ="";
-  var titleTag = "";
+
   fetch('https://imdb-api.com/en/API/MostPopularMovies/'+apiKimbd+'')
       .then((response) => response.json())
       .then((data) => {
