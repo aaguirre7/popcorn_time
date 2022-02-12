@@ -23,27 +23,28 @@ function loadHome (){
                    <img src="${list[i].image}">
                    </figure>
                    <p class="title is-4">${list[i].title}</p>
-                   <p class="subtitle">Release Year:${list[i].imDbRating}</p>
+                   <p class="subtitle">Imdb Rating:${list[i].imDbRating}</p>
                    <script type="text/javascript">
                      $(document).ready(function() {
                          $("#${list[i].id}").click(function(){
-                           largeDescription(${list[i].id});
+                           largeDescription("${list[i].id}");
                          });
                      });
                    </script>
                </article>
-               <article id="${list[i].id}" class="tile is-child box is-info ">
+               <article id="${list[x].id}" class="tile is-child box is-info">
                    <figure class="image">
                        <img src="${list[x].image}">
                    </figure>
                    <p class="title is-4">${list[x].title}</p>
-                   <p class="subtitle">Release Year:${list[x].imDbRating}</p>
+                   <p class="subtitle">Imdb Rating:${list[x].imDbRating}</p>
                    <script type="text/javascript">
                      $(document).ready(function() {
                          $("#${list[x].id}").click(function(){
-                           largeDescription(${list[x].id});
+                           largeDescription("${list[x].id}");
                          });
-                     }); 
+                     });
+                     </script>
                </article>
            </div>`)
           }

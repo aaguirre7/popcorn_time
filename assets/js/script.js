@@ -64,12 +64,14 @@ function searchError(){
     });
   }
   function largeDescription(movie){
-      const movieId = movie[0].id;
+    
+      console.log(movie);
+    ;
         $("#movieContainer").html('');
          $("#movieContainer").append(`<div class="tile is-parent"> 
                 <article class="tile is-child box is-info">
                   <figure id="poster" class="image">
-                    <img src="https://imdb-api.com/en/API/Report/${apiKimbd}/${movieId}">
+                    <img src="https://imdb-api.com/en/API/Report/${apiKimbd}/${movie}">
                   </figure>
                 </article>
               </div>`)      
