@@ -37,7 +37,7 @@ function loadHome (){
                        <img src="${list[x].image}">
                    </figure>
                    <p class="title is-4">${list[x].title}</p>
-                   <p class="subtitle">Imdb Rating:${list[i].imDbRating}</p>
+                   <p class="subtitle">Imdb Rating:${list[x].imDbRating}</p>
                    <script type="text/javascript">
                      $(document).ready(function() {
                          $("#${list[x].id}").click(function(){
