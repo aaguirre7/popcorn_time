@@ -1,6 +1,11 @@
 @import "normalize.css";
 html, body {
     height:100%;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+
+
 }  
 header{
     flex: 1;
@@ -16,17 +21,109 @@ header{
     
 }  
 
+<<<<<<< HEAD
 @media screen and (max-width: 1023px){
   .navbar-menu{
   background-color: black;
   }
 }
 
+=======
+/*.title {
+  text-decoration: none;
+  color: white;
+  padding: 1rem;
+  display: block;
+
+}*/
+>>>>>>> maria
 
 .navbar{
    background-color: transparent;
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   color: white;
 }
 
+<<<<<<< HEAD
+=======
+.navbar-links ul {
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+
+.navbar-links li {
+  list-style: none;
+}
+
+.navbar-links li a{
+  text-decoration: none;
+  color: white;
+  padding: 1rem;
+  display: block;
+}
+
+/*.navbar-links li:hover {
+  background-color: #555;
+  border-radius: 10px;
+  
+}*/
+
+.toggle-button {
+  position: absolute;
+  top: .75rem;
+  right: 1rem;
+  display: none;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 30px;
+  height: 21px;
+}
+
+.toggle-button .bar {
+  height: 3px;
+  width: 100%;
+  background-color: white;
+  border-radius: 10px;
+}
+
+@media (max-width: 600px) {
+  .toggle-button {
+    display: flex;
+  }
+
+  .navbar-links {
+    display: none;
+    width: 100%;
+  }
+
+  .navbar {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .navbar-links ul {
+    width: 100%;
+    flex-direction: column;
+  }
+
+  .navbar-links li {
+    text-align: right;
+  }
+  
+  .navbar-links li a {
+  
+    padding-bottom: 15px;
+  }
+
+  .navbar-links.active {
+    display: flex;
+  }
+}
+
+>>>>>>> maria
 
 .input-group-rounded .input-group-field {
     border-radius: 5000px 0 0 5000px;
@@ -55,7 +152,9 @@ footer{
   width: 100%;
   background-size: contain cover;
   border-top: rgb(35, 48, 67);
+  
 }
+<<<<<<< HEAD
 #mymovies{
   display: flex;
   flex-wrap: wrap;
@@ -74,3 +173,7 @@ footer.columns{
 #poster{
   clip-rule: nonzero;
 }
+=======
+
+
+>>>>>>> maria
