@@ -66,6 +66,7 @@ footer{
   flex-wrap: wrap;
   justify-content: space-around;
   margin-top:3rem;
+
 }
 
 
@@ -73,6 +74,7 @@ footer.columns{
   margin-left: 0%;
   margin-right: 0%;
 }
+
 #burger{
   background-color: transparent;
 }
@@ -86,4 +88,5 @@ footer.columns{
 }
 #stars{
   display:flex;
+
 }
