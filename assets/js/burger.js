@@ -1,3 +1,5 @@
+// javacript to activate the navbar + navburger
+
 document.addEventListener('DOMContentLoaded', function () {
 
     // Dropdowns in navbar
