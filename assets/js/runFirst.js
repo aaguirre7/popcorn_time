@@ -63,5 +63,3 @@ function burger (){
         burger.classList.toggle("is-active")
     });
 }
-
-
