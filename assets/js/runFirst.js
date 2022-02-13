@@ -1,43 +1,66 @@
-const apiKimbd = "k_x9h3qobd";
-const apiKwmode = "h2LXbCztIcaw7kZ2ENKOWBrMpS0TnqoOccCqFF58";
+// Javascript for everything that appears when you first load the page.
 
-let Myfavs = [];
+const apiKimbd = "k_4s8hgj73";
+const apiKwmode = "h2LXbCztIcaw7kZ2ENKOWBrMpS0TnqoOccCqFF58";
+loadHome();
+burger();
+
+// function to add favorites to local storage
+function favorites (){
+const Myfavs = [];
   if( localStorage.getItem("myMovies")){
-    searchedCities = JSON.parse(localStorage.getItem("citysearch"));
+    movies = JSON.parse(localStorage.getItem("movieId"));
   } 
-  
-  var container1 = document.getElementById("movieContainer1");
-  var container2 = document.getElementById("movieContainer2");
-  
-  fetch('https://imdb-api.com/en/API/MostPopularMovies/k_x9h3qobd')
+}
+// function that loads the currently trending top 10 movies in the US.
+function loadHome (){
+  fetch('https://imdb-api.com/en/API/MostPopularMovies/'+apiKimbd+'')
       .then((response) => response.json())
       .then((data) => {
           console.log('data:', data);
           const list = data.items;
           console.log('list:', list);
-  
-          for (let i = 0; i < 10; i++) {
-            if(i <= 4) {
-              var imgTag = document.createElement("img");
-              imgTag.setAttribute("src", list[i].image);
-              container1.appendChild(imgTag);
-               
-              var pTag = document.createElement("p");
-              pTag.textContent = list[i].title + " (" + list[i].imDbRating + ")";
-              container1.appendChild(pTag);
-              
-            }else {
-              var imgTag = document.createElement("img");
-              imgTag.setAttribute("src", list[i].image);
-              container2.appendChild(imgTag);
-          
-              var pTag = document.createElement("p");
-              pTag.textContent = list[i].title + " (" + list[i].imDbRating + ")";
-              container2.appendChild(pTag);
-              
-            }
+          // create a for loop to only show the first 10 of the top 250 most popular movies
+          for (let i = 0 , x = 5; i < 5; i++ , x ++) {
+               $("#movieContainer").append(`<div class="tile is-parent is-vertical">
+               <article id="${list[i].id}" class="tile is-child box is-info ">
+                   <figure class="image">
+                   <img src="${list[i].image}">
+                   </figure>
+                   <p class="title is-4">${list[i].title}</p>
+                   <p class="subtitle">Imdb Rating:${list[i].imDbRating}</p>
+                   <script type="text/javascript">
+                     $(document).ready(function() {
+                         $("#${list[i].id}").click(function(){
+                           largeDescription("${list[i].id}");
+                         });
+                     });
+                   </script>
+               </article>
+               <article id="${list[x].id}" class="tile is-child box is-info">
+                   <figure class="image">
+                       <img src="${list[x].image}">
+                   </figure>
+                   <p class="title is-4">${list[x].title}</p>
+                   <p class="subtitle">Imdb Rating:${list[x].imDbRating}</p>
+                   <script type="text/javascript">
+                     $(document).ready(function() {
+                         $("#${list[x].id}").click(function(){
+                           largeDescription("${list[x].id}");
+                         });
+                     });
+                     </script>
+               </article>
+           </div>`)
           }
-      })
+
+    })
+    // error handling
       .catch(error => {
           console.log('error', error);
       });
+}
+
+
+
+

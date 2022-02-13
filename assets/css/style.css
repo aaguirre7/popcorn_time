@@ -15,9 +15,24 @@ header{
     width: 100%;
     
 }  
+
+@media screen and (max-width: 1023px){
+  .navbar-menu{
+  background-color: black;
+  }
+}
+
+.navbar-dropdown{
+  background-color: black;
+}
+
+
+
 .navbar{
    background-color: transparent;
 }
+
+
 .input-group-rounded .input-group-field {
     border-radius: 5000px 0 0 5000px;
     padding-left: 1rem;
@@ -29,22 +44,46 @@ header{
   }
 main{
     display: flex;
-    flex-wrap: wrap;
     flex-direction: column;
     background-color:black;
     background-image: url("../../assets/images/main_bckg.png");
     background-repeat: no-repeat;
-    background-size: cover;
+    background-size:cover;
     background-position: center;
     background-attachment:unset;
-    height: 1300px;
-    width: 100%;
-    z-index: 0;   
+    height: 145rem;
 }  
+
 footer{
   background-color: rgb(140,18,13);
   background-position:center;
   width: 100%;
-  background-size:auto;
+  background-size: contain cover;
   border-top: rgb(35, 48, 67);
+}
+#mymovies{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  margin-top:3rem;
+}
+
+
+footer.columns{
+  margin-left: 0%;
+  margin-right: 0%;
+}
+#burger{
+  background-color: transparent;
+}
+
+#poster{
+  clip-rule: nonzero;
+}
+#actors{
+    height: 20%;
+    width: 20%;
+}
+#stars{
+  display:flex;
 }
