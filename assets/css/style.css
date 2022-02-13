@@ -22,6 +22,11 @@ header{
   }
 }
 
+.navbar-dropdown{
+  background-color: black;
+}
+
+
 
 .navbar{
    background-color: transparent;
@@ -71,6 +76,7 @@ footer.columns{
 #burger{
   background-color: transparent;
 }
+
 #poster{
   clip-rule: nonzero;
 }

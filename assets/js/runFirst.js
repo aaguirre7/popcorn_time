@@ -54,14 +54,7 @@ function loadHome (){
           console.log('error', error);
       });
 }
-function burger (){
-    const nav = document.querySelector("#navbar-menu");
-    const burger = document.querySelector("#burger");
 
-    burger.addEventListener('click', ()=> {
-        nav.classList.toggle("is-active")
-        burger.classList.toggle("is-active")
-    });
-}
+
 
 
