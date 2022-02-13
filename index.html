@@ -21,61 +21,71 @@
     <!-- Header + Nav -->
 <header>
   <section class="title">
-    <nav class="navbar is-transparent">
-      <div class= "navbar-brand ">
+    <!-- Navbar in Desktop -->
+   <nav class="navbar is-transparent">
+    <div class="navbar-brand">
+      <a class="navbar-item" href="index.html">
+        <img src="" alt="" width="" height="">
+      </a>
+      <!-- Becomes navbar-burger in mobile-->
+      <div class="navbar-burger burger" data-target="navbarExampleTransparentExample">
+        <span></span>
+        <span></span>
+        <span></span>
       </div>
-      </div>  	
-      <div class="navburger-menu">
-          <!--<div class="navbar-start"> -->
-              <div class="navbar-end">
-                <a class="navbar-item has-text-white">Home</a>
-                <a class="navbar-item has-text-white" href="#">My Movies</a>
-              </div>
-            <!--</div>-->
+    </div>
+  
+    <div id="navbarExampleTransparentExample" class="navbar-menu">
+      <div class="navbar-start">
+        <a class="navbar-item has-text-white" href="index.html">
+          Home
+        </a>
+        <div class="navbar-item has-dropdown is-hoverable">
+          <a class="navbar-link has-text-white" href="">
+            My Favorites
+          </a>
+          <div class="navbar-dropdown is-boxed">
+            <a class="navbar-item has-text-white has-text-right" href="">
+              Favorites Go Here
+            </a>
+            </a>
+          </div>
         </div>
-      </nav>
-  </section>
+      </div>
+    </div>
+  </nav>
+ </section>
 </header>
 <!-- Search + Bar-->
 <main>
 <section>
-  <div class="columns is-mobile is-centered input-group input-group-rounded"id="searchBtn">
-    <input class="input-group-field column is-three-fifths " type="text" id="search-text" placeholder="Search Movies">
+  <div class="is-mobile is-centered input-group input-group-rounded"id="searchBtn">
+    <input class="input-group-field is-three-fifths " type="text" id="search-text" placeholder="Search Movies">
    <div class="input-group-button"> 
     <button id="searchBtn" class="button secondary">Search</button>
     </div>      
   </div>
 </section>
-<div class="modal">
-  <div class="modal-background"></div>
-  <div class="modal-content  has-text-white">
-    <img src="assets/images/error-popcorn-sm.png">
-    Your search did not find 
-    any movies in our Database
-  </div>
-  <button class="modal-close" aria-label="close"></button> 
-  </div>
-<div>
-  <br> <br> <br>
-</div>
-<section id="flex-use" class="inside is-mobile">
-  <div class="columns">
-    <div class="column">
-    </div>
-    <div class="column">
-    </div>
-    <div class="column">
-    </div>
-    <div class="column">
-    </div>
-  </div>
 
-  <div id="movieContainer" class="inside column is-mobile"></div>
+<!-- Main conatianer for movies and other functions using tiles-->
+<section id="flex-use"> 
+  <div id="mymovies" class="tile is-ancestor">
+      <div class="tile is-vertical is-11">
+        <div id="movieContainer" class="tile is-block-tablet is-flex-desktop container">
+          
+      </div>
+    </div>
+   </div>
+   
+
 </section>
+<span id="bMain"><br><br></span>
 </main>
+<script type="text/javascript" src="assets/js/burger.js"></script>
 <script type="text/javascript" src="assets/js/runFirst.js"></script>
 <script type="text/javascript" src="assets/js/script.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/foundation-sites@6.7.4/dist/js/foundation.min.js" crossorigin="anonymous"></script>
+<!-- Footer -->
 <footer class="columns is-mobile has-text-white">
   <div class="column">
     <H4>Made by the wonderful Team-2.0</H4>
