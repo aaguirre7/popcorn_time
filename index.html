@@ -21,57 +21,48 @@
     <!-- Header + Nav -->
 <header>
   <section class="title">
-    <nav class="navbar is-transparent">
-      <div class= "navbar-brand ">
+    <nav class="navbar" role="navigation" aria-label="main navigation" id="nav-bar">
+      <div class="navbar-brand">
+        <a class="navbar-item" href="index.html">
+          <img src="" alt="" width="" height="">
+        </a>
+    
+        <a role="button" id="burger" class="navbar-burger">
+          <span aria-hidden="true"></span>
+          <span aria-hidden="true"></span>
+          <span aria-hidden="true"></span>
+        </a>
       </div>
-      </div>  	
-      <div class="navburger-menu">
-          <!--<div class="navbar-start"> -->
-              <div class="navbar-end">
-                <a class="navbar-item has-text-white">Home</a>
-                <a class="navbar-item has-text-white" href="#">My Movies</a>
-              </div>
-            <!--</div>-->
+      <div id="navbar-menu" class="navbar-menu">
+        <div class="navbar-start has-text-right">
+          <a href="index.html" class="navbar-item has-text-white"> Home</a>
+          <a href="" class="navbar-item has-text-white"> My Favorites</a>
         </div>
-      </nav>
+      </div>
+    </nav>
   </section>
 </header>
 <!-- Search + Bar-->
 <main>
 <section>
-  <div class="columns is-mobile is-centered input-group input-group-rounded"id="searchBtn">
-    <input class="input-group-field column is-three-fifths " type="text" id="search-text" placeholder="Search Movies">
+  <div class="is-mobile is-centered input-group input-group-rounded"id="searchBtn">
+    <input class="input-group-field is-three-fifths " type="text" id="search-text" placeholder="Search Movies">
    <div class="input-group-button"> 
     <button id="searchBtn" class="button secondary">Search</button>
     </div>      
   </div>
 </section>
-<div class="modal">
-  <div class="modal-background"></div>
-  <div class="modal-content  has-text-white">
-    <img src="assets/images/error-popcorn-sm.png">
-    Your search did not find 
-    any movies in our Database
-  </div>
-  <button class="modal-close" aria-label="close"></button> 
-  </div>
-<div>
-  <br> <br> <br>
-</div>
-<section id="flex-use" class="inside is-mobile">
-  <div class="columns">
-    <div class="column">
+<section id="flex-use"> 
+  <div id="mymovies" class="tile is-ancestor">
+      <div class="tile is-vertical is-11">
+        <div id="movieContainer" class="tile is-block-tablet is-flex-desktop container">
+          
+      </div>
     </div>
-    <div class="column">
-    </div>
-    <div class="column">
-    </div>
-    <div class="column">
-    </div>
-  </div>
-
-  <div id="movieContainer" class="inside column is-mobile"></div>
+   </div>
+   
 </section>
+<span id="bMain"><br><br></span>
 </main>
 <script type="text/javascript" src="assets/js/runFirst.js"></script>
 <script type="text/javascript" src="assets/js/script.js"></script>

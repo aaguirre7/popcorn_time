@@ -15,9 +15,18 @@ header{
     width: 100%;
     
 }  
+
+@media screen and (max-width: 1023px){
+  .navbar-menu{
+  background-color: black;
+  }
+}
+
+
 .navbar{
    background-color: transparent;
 }
+
 
 .input-group-rounded .input-group-field {
     border-radius: 5000px 0 0 5000px;
@@ -30,27 +39,15 @@ header{
   }
 main{
     display: flex;
-    flex-wrap: wrap;
     flex-direction: column;
     background-color:black;
     background-image: url("../../assets/images/main_bckg.png");
     background-repeat: no-repeat;
-    background-size: cover;
+    background-size:cover;
     background-position: center;
     background-attachment:unset;
-    height: 1300px;
-    width: 100%;
-    z-index: 0;   
+    height: 145rem;
 }  
-
-p {
-flex-grow: initial;
-flex-shrink:unset;
-flex-basis: 0px;
-display: flex;
-text-align: center;
-text-rendering: auto;
-}
 
 footer{
   background-color: rgb(140,18,13);
@@ -59,18 +56,11 @@ footer{
   background-size: contain cover;
   border-top: rgb(35, 48, 67);
 }
-
-#movieContainer{
+#mymovies{
   display: flex;
-  flex-grow: unset;
-  flex-shrink:inherit;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-  align-content: center;
-  text-align: center;
-  box-sizing: content-box;
-  width: 100%;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  margin-top:3rem;
 }
 
 
@@ -78,8 +68,9 @@ footer.columns{
   margin-left: 0%;
   margin-right: 0%;
 }
-
-.inside {
-  max-width: var(--contentWidth);
-  margin: 0 auto;
+#burger{
+  background-color: transparent;
+}
+#poster{
+  clip-rule: nonzero;
 }
