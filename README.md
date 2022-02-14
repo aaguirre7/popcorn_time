@@ -73,14 +73,14 @@ Given that I am looking for a movie to watch, when I search for the movie title,
 <!-- Team Members -->
 ## Team Members
 --- 
-Abraham Aguirre 
-German Lopez
-Ajaypal Ghuman
-Maria Andrea Rodriguez
+- Abraham Aguirre 
+- German Lopez
+- Ajaypal Ghuman
+- Maria Andrea Rodriguez
 ---
 ## Project Links:
 
-* [Github Repository]: (https://github.com/Mandrea30/Popcorn_Time)
-* [Deployed Application] 
-* [Portfolio]
+* [Github Repository]: (https://github.com/aaguirre7/popcorn_time/tree/main)
+* [Deployed Application]: (https://aaguirre7.github.io/popcorn_time/)
+
 
