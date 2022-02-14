@@ -10,12 +10,12 @@
         <img src="./assets/images/title_banner_sm.png" alt="Popcorn time">
     <a/>
     
-    # Popcorn Time
+
 
 <!-- ABOUT THE PROJECT -->
 ## About The Project
 
-[![Product Name Screen Shot][product-screenshot]](./assets/images/01-html-css-git-homework-demo.png)
+![Product Name Screen Shot](./assets/images/01-html-css-git-homework-demo.png)
 
 
 ## Technologies Used: 
