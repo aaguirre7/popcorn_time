@@ -1,7 +1,9 @@
 # PORCORN TIME 🍿
  ## Memory Tiles
  
-### Links :
+### Links
+* Website https://aaguirre7.github.io/popcorn_time/
+* Github Repository https://github.com/aaguirre7/popcorn_time
 
  
 
