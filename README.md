@@ -1,5 +1,4 @@
 # PORCORN TIME 🍿
- ## Memory Tiles
  
 ### Links
 * Website https://aaguirre7.github.io/popcorn_time/
@@ -20,12 +19,12 @@ Given that I am looking for a movie to watch, when I search for the movie title,
 
 ## Structure
 
-The game buttons are displayed on a black background. Three options are presented to the user, "start", "tutorial" and "strictmode". 
-The start game button triggers the game container to bounce down. Four black tiles appear, the game begins by firstly flipping one tile. Placed above the four tiles is an "exit" button which allows the user to return to the main menu. 
-The tutorial button triggers a modal. The modal contains step by step insturctions. These include a desciption of how to play along with corresponding images. 
-The strictmode option is a simple checkbox which the user can select if they wish to play the game in strictmode. 
-
+The Website is designed to when you enter you are provided with the top 10 most popular movies at the current time, they are also provided with the ability to click and see the title and description of a movie you would like to see.
+You may also search for whatever movie you would like to come across as our websites provides you with over a unlimited amount of searching potential
+Its also provides you with an option to add a movie to your favorites list and saves it in our local storage for when you decide to come back all your movies will be right were you left them.
+## Start of website, you will be able to see the Top 10 best movies ranked
 ![Capture](https://user-images.githubusercontent.com/93087137/153800677-a1912a7e-771b-41a9-a400-4dc9dfa7ed86.PNG)
+## This provides you with a poster, title of the movie, cast, streaming platforms that may provide the movie, and detailed description of what you are viewing, including audience score from the official IMBD website.
 ![Capture](https://user-images.githubusercontent.com/93087137/153800836-9455122f-d909-4269-9adb-a2881b32a0f2.PNG)
 ![Capture](https://user-images.githubusercontent.com/93087137/153801475-abc9ab1c-350b-414f-aceb-95fba7c3d898.PNG)
 
