@@ -1,6 +1,8 @@
-<div id="top"><div>
-<!--
-*** This is the Readme for the Interactive Front-End project
+# PORCORN TIME 🍿
+ 
+### Links
+* Website https://aaguirre7.github.io/popcorn_time/
+* Github Repository https://github.com/aaguirre7/popcorn_time
 
 
 <!-- Project Logo -->
@@ -12,10 +14,14 @@
     
 
 
-<!-- ABOUT THE PROJECT -->
-## About The Project
-
-![Product Name Screen Shot](./assets/images/01-html-css-git-homework-demo.png)
+The Website is designed to when you enter you are provided with the top 10 most popular movies at the current time, they are also provided with the ability to click and see the title and description of a movie you would like to see.
+You may also search for whatever movie you would like to come across as our websites provides you with over a unlimited amount of searching potential
+Its also provides you with an option to add a movie to your favorites list and saves it in our local storage for when you decide to come back all your movies will be right were you left them.
+## Start of website, you will be able to see the Top 10 best movies ranked
+![Capture](https://user-images.githubusercontent.com/93087137/153800677-a1912a7e-771b-41a9-a400-4dc9dfa7ed86.PNG)
+## This provides you with a poster, title of the movie, cast, streaming platforms that may provide the movie, and detailed description of what you are viewing, including audience score from the official IMBD website.
+![Capture](https://user-images.githubusercontent.com/93087137/153800836-9455122f-d909-4269-9adb-a2881b32a0f2.PNG)
+![Capture](https://user-images.githubusercontent.com/93087137/153801475-abc9ab1c-350b-414f-aceb-95fba7c3d898.PNG)
 
 
 ## Technologies Used: 
@@ -32,12 +38,13 @@ German & Maria Andrea: HTML and CSS
 [Watchmode API]: (https://api.watchmode.com)
 [IMDB API]: (https://imdb-api.com)
 
-## CSS Framework: 
-Bulma and Foundation
+## Features 
+ #### Top Ten Movies Currently
+ #### Favorites list 
+ #### My movies 
+ 
 
-## Concept
-As a movie fanatic I want to research movie titles and ratings before purchasing tickets to the theatre or purchasing it online.
-I want to make sure that the movie I search for is going to be a fun and thrilling experience. So that I do not waste time and money.
+
 
 ## Acceptance Criteria
 Given that I am looking for a movie to watch, when I search for the movie title, then I receive information about the movie, cast, and ratings.
