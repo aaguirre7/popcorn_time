@@ -8,14 +8,18 @@ function favorites (){
   var myMovies = [],
   movies = Object.keys(localStorage),
   index1 = movies.length;
+  var movieKey =[];
   var index2 = index1;
   var index3 = index1;
   if( index2 > 0 ){
     while (index2 --){
       myMovies.push(localStorage.getItem(movies[index2]));
+      movieKey.push(localStorage.key(movies[index2]))
+      
     }
+    console.log(movieKey);
     for (x =0 ; x< index3 ; x++){
-      $("#favsBar").append(`<button class="navbar-item has-text-white has-text-right" id="${myMovies}">
+      $("#favsBar").append(`<button class="navbar-item has-text-white has-text-right" id="${movieKey[x]}">
       ${myMovies[x]}
       </button>`);
     }
