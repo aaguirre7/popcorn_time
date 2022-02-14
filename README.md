@@ -9,92 +9,78 @@
     <a href="https://github.com/aaguirre7/popcorn_time">
         <img src="./assets/images/title_banner_sm.png" alt="Popcorn time">
     <a/>
-    <h3 align="center">
-        Horseon SEO website
-    </h3>
-    <p align="center">
-        A Front-End Development Project
-        <br />
-        <a href="https://github.com/aaguirre7/popcorn_time">
-            <strong>Explore the documentation here</strong>
-        </a>
-        <br />
-        <br />
-        <a href=" insert the deployed site">
-            View the site here
-        </a>
-    </p>
-</div>
-
-<!-- TABLE OF CONTENTS -->
-<details>
-  <summary>Table of Contents</summary>
-  <ol>
-    <li>
-      <a href="#about-the-project">About The Project</a>
-    </li>
-    <li>
-        <a href="#contact">Contact</a>
-    </li>
-
-  </ol>
-</details>
+    
+    # Popcorn Time
 
 <!-- ABOUT THE PROJECT -->
 ## About The Project
 
 [![Product Name Screen Shot][product-screenshot]](./assets/images/01-html-css-git-homework-demo.png)
 
-The group will use everything learned over the past six weeks to create a real-world front-end application that you’ll be able to showcase to potential employers. The user story and acceptance criteria will depend on the project that you create, but your project must fulfil the following requirements:
 
-- Use a CSS framework other than Bootstrap.
+## Technologies Used: 
+Html, CSS, JQuery, JavaScript.
 
-- Be deployed to GitHub Pages.
+## How will your Application work?
+As the user searches and does research on movie titles, they will receive general information regarding the movie plot, cast, images and movie rating and where to watch.
 
-- Be interactive (i.e: accept and respond to user input).
+## Who's planning on working on what?
+Abraham & AJ: Javascript and APIs
+German & Maria Andrea: HTML and CSS 
 
-- Use at least two server-side APIs.
+## APIs
+[Watchmode API]: (https://api.watchmode.com)
+[IMDB API]: (https://imdb-api.com)
 
-- Does not use alerts, confirms, or prompts (use modals).
+## CSS Framework: 
+Bulma and Foundation
 
-- Use client-side storage to store persistent data.
+## Concept
+As a movie fanatic I want to research movie titles and ratings before purchasing tickets to the theatre or purchasing it online.
+I want to make sure that the movie I search for is going to be a fun and thrilling experience. So that I do not waste time and money.
 
-- Be responsive.
+## Acceptance Criteria
+Given that I am looking for a movie to watch, when I search for the movie title, then I receive information about the movie, cast, and ratings.
 
-- Have a polished UI.
+## Screenshot / Usage
+--- 
+### Home Page
+![1  homepage](https://user-images.githubusercontent.com/93743349/153797709-beae49b4-7d56-40a0-a718-bb0625a28db1.png)
 
-- Have a clean repository that meets quality coding standards (file structure, naming conventions, follows best practices for class/id-naming conventions, indentation, quality comments, etc.).
+### Clicking on a Movie Title
+![2  click on movie](https://user-images.githubusercontent.com/93743349/153797715-d647e883-d2d4-4c27-aaa2-31ff4401d458.png)
 
-- Have a quality README (with unique name, description, technologies used, screenshot, and link to deployed application).
+### Searching a Movie Title
+![5  search](https://user-images.githubusercontent.com/93743349/153797914-4c551948-c2de-4969-9c6f-38e8aab22c83.png)
 
-- Finally, You must add your project to the portfolio that you created in Module 2.
+### Mobile Home Page
 
-What was done:
+![3  mobile homepage](https://user-images.githubusercontent.com/93743349/153797723-0386a5b8-1239-400e-829e-638e04335d2c.png)
 
-- Used Bulma as an alternative to Bootstrap, along with CSS framework.
+### Mobile Navbar Burger
+![4  navbar](https://user-images.githubusercontent.com/93743349/153797729-30b46e29-54c1-47e8-8d1b-f8756dfa0acb.png)
 
-- Popcorn Time is mobile responsive as the majority of users will use a mobile device to search for movie titles.
+--- 
 
-- Should there be a title that cannot be found, a modal will alert the user that their search did not have results.
-
-- 
-
-- Popcorn Time interacts with the user by providing the description, cast members, release date of the title selected by the user when using the 'Movie Search' feature. As well as, providing the user the "Where to Whatch" feature, in order for them to select their preferred movie channel, app or subscription.
+## Directions for Future Development
+- Ability to earch Movies by genre (Comedy, Action, Thriller, etc.)
+- Ability to recommend Movie Titles by the user mood.
+- Ability to add location based service to search for the nearest movie theater.
 
 
 <p align="right">(<a href="#top">back to top</a>)</p>
 
 <!-- Team Members -->
 ## Team Members
-
+--- 
 Abraham Aguirre 
 German Lopez
 Ajaypal Ghuman
 Maria Andrea Rodriguez
+---
+## Project Links:
 
-Project Link: [https://github.com/aaguirre7/horiseon-seo](https://github.com/aaguirre7/horiseon-seo)
+* [Github Repository]: (https://github.com/Mandrea30/Popcorn_Time)
+* [Deployed Application] 
+* [Portfolio]
 
-<!-- MARKDOWN LINKS & IMAGES -->
-[linkedin-shield]: https://img.shields.io/badge/-LinkedIn-black.svg?style=for-the-badge&logo=linkedin&colorB=555
-[linkedin-url]: https://www.linkedin.com/in/abraham-aguirre-1b237293/
-[product-screenshot]: ./assets/images/01-html-css-git-homework-demo.png
