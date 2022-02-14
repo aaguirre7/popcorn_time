@@ -78,9 +78,9 @@ Given that I am looking for a movie to watch, when I search for the movie title,
 - Ajaypal Ghuman
 - Maria Andrea Rodriguez
 ---
-## Project Links:
+Deployed App.
 
-- [Github Repository]: https://github.com/aaguirre7/popcorn_time/tree/main
-- [Deployed Application]: https://aaguirre7.github.io/popcorn_time/
+Github Repository: https://github.com/aaguirre7/popcorn_time/tree/main
+Deployed Application: https://aaguirre7.github.io/popcorn_time/
 
 
