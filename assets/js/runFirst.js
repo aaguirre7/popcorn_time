@@ -1,4 +1,4 @@
-// Javascript for everything that appears when you first load the page.
+// js for everything that appears when you first load the page.
 
 // 2 API keys for both of the API's used in the app
 const apiKimbd = "k_4s8hgj73";
