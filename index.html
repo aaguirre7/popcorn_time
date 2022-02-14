@@ -1,10 +1,11 @@
-<!DOCTYPE html > 
+<<!DOCTYPE html > 
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
     <link rel="icon" href="assets/images/icon.ico">
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.9.3/css/bulma-rtl.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/foundation/6.7.4/css/foundation-float.min.css">
     <link rel="stylesheet" href="assets/css/style.css">
@@ -35,7 +36,7 @@
         <span></span>
       </div>
     </div>
-  
+  <!-- provides links for the favorites and home tab-->
     <div id="navbarExampleTransparentExample" class="navbar-menu">
       <div class="navbar-start">
         <a class="navbar-item has-text-white" onclick="loadHome()">
@@ -63,8 +64,7 @@
     </div>      
   </div>
 </section>
-
-<!-- Main conatianer for movies and other functions using tiles-->
+<!-- Main container for movies and other functions using tiles-->
 <section id="flex-use"> 
   <div id="mymovies" class="tile is-ancestor">
       <div class="tile is-vertical is-11">
@@ -74,9 +74,10 @@
     </div>
    </div>
    
+   <button id="addFaves">Add to Favorites</button>
+   <button id="clearData">Delete</button>
 
 </section>
-<span id="bMain"><br><br></span>
 </main>
 <script type="text/javascript" src="assets/js/burger.js"></script>
 <script type="text/javascript" src="assets/js/runFirst.js"></script>
