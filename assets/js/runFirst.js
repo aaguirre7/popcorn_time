@@ -1,12 +1,3 @@
-<<<<<<< HEAD
-const apiKimbd = "k_4s8hgj7";
-const apiKwmode = "h2LXbCztIcaw7kZ2ENKOWBrMpS0TnqoOccCqFF58";
-
-let Myfavs = [];
-  if( localStorage.getItem("myMovies")){
-    searchedCities = JSON.parse(localStorage.getItem("citysearch"));
-  }
-=======
 // Javascript for everything that appears when you first load the page.
 
 const apiKimbd = "k_4s8hgj73";
@@ -72,5 +63,4 @@ function loadHome (){
 
 
 
->>>>>>> 511b4bfc3eecf23c276c615ba4d51d29f5a16300
 
