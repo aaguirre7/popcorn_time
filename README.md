@@ -45,18 +45,11 @@ Its also provides you with an option to add a movie to your favorites list and s
   Link:https://get.foundation/index.html
 
 ## Features 
+ Top Ten Movies Currently
+ Favorites list 
+ My movies 
+ 
 
-
-#### Top Ten Movies Currently:
-Upon entry to the page, the game menu reveals itself with a bouncing down effect from the top of the screen. 
-This effect is also applied to the game container itself, which is triggered when the user selects the "start Game " button. 
-This was applied with the use of css. 
-
-#### Modals :
-Bootstrap modals were used for the tutorial Information,"Correct" and"incorrect" alerts .Within these modals are a "next stage", "preview again" or "restart game " button. The "preview again" button only appears within the modal if you havent selected the "strict Mode" checkbox, otherwise the user is asked to restart the game. 
-
-#### Favorites List:
-Audio is triggered by the users onclick, depending on whether or not they have selected the correct pattern previously displayed to them. 
 
 
 
