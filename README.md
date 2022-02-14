@@ -45,9 +45,9 @@ Its also provides you with an option to add a movie to your favorites list and s
   Link:https://get.foundation/index.html
 
 ## Features 
- Top Ten Movies Currently
- Favorites list 
- My movies 
+ #### Top Ten Movies Currently
+ #### Favorites list 
+ #### My movies 
  
 
 
