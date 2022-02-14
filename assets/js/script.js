@@ -1,3 +1,4 @@
+// function for the searchbar. Called when searching a movie title on the app.
 $(document).ready(function(){
     $("button").click(function(){
       console.log("this ran");
@@ -15,6 +16,8 @@ $(document).ready(function(){
       }else {
             checkMoviecontainer();
             $("#movieContainer").html('');
+            // created a for loop to limit the amount of search items shown on the webpage.
+            // when movie is searched, the posters and titles are shown
             for (let i = 0 ,  x = Math.ceil((listSize / 2)); x < listSize  ; i ++, x ++){
               $("#movieContainer").append(`<div class="tile is-parent is-vertical">
               <article id="${list[i].id}" class="tile is-child box is-info ">
@@ -52,6 +55,7 @@ $(document).ready(function(){
           });
       })
     });
+    // created a search error if the movie searched has no matches or does not exist
 function searchError(){
     var modal = document.querySelector('.modal');
     var html = document.querySelector('html');
@@ -63,6 +67,7 @@ function searchError(){
     html.classList.remove('is-clipped');
     });
 }
+// show description of movie once movie tile is clicked (title, actors, runtime, rating, etc)
 function largeDescription(movie){
    
    console.log(movie);
@@ -116,7 +121,7 @@ function largeDescription(movie){
           </div>
            </div>`)
         
-        
+        // for loop created to list main actors in movie along with their images.
         for (x =0 ; x < listSize ; x ++){
           $("#stars").append(`
           <figure id="actors" class="box image is-16x16">
@@ -126,6 +131,8 @@ function largeDescription(movie){
           </figure>`)
 
         };
+
+        // this function shows where you can currently watch the movie on streaming services using the Watchmode API
         fetch('https://api.watchmode.com/v1/search/?apiKey=h2LXbCztIcaw7kZ2ENKOWBrMpS0TnqoOccCqFF58&search_field=imdb_id&search_value='+movie+'')
       .then((response) => response.json())
       .then((data) => {
@@ -150,6 +157,7 @@ function largeDescription(movie){
   });
 
 }
+// modifies the html when a movie is selected to show the description
 function checkMoviecontainer (){
   var movieContainer =document.getElementById(movieContainer);
   if(movieContainer){}

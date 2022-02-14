@@ -1,9 +1,9 @@
 // Javascript for everything that appears when you first load the page.
 
+// 2 API keys for both of the API's used in the app
 const apiKimbd = "k_4s8hgj73";
 const apiKwmode = "h2LXbCztIcaw7kZ2ENKOWBrMpS0TnqoOccCqFF58";
 loadHome();
-burger();
 
 // function to add favorites to local storage
 function favorites (){
