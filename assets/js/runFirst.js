@@ -1,16 +1,21 @@
-// js for everything that appears when you first load the page.
+// Javascript for everything that appears when you first load the page.
 
-// 2 API keys for both of the API's used in the app
 const apiKimbd = "k_4s8hgj73";
 const apiKwmode = "h2LXbCztIcaw7kZ2ENKOWBrMpS0TnqoOccCqFF58";
 loadHome();
 
 // function to add favorites to local storage
 function favorites (){
-const Myfavs = [];
-  if( localStorage.getItem("myMovies")){
-    movies = JSON.parse(localStorage.getItem("movieId"));
-  } 
+  var myMovies = [],
+  movies = Object.keys(localStorage),
+  i = movies.length;
+  
+  if( i < 0 ){
+    while (i --){
+      myMovies.push(localStorage.getItem(movies)[i]);
+    }
+    
+    } 
 }
 // function that loads the currently trending top 10 movies in the US.
 function loadHome (){
