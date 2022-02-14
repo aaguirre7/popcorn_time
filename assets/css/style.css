@@ -16,9 +16,17 @@ header{
     
 }  
 
+@media screen and (max-width: 1023px){
+  .navbar-menu{
+  background-color: black;
+  }
+}
+
+
 .navbar{
    background-color: transparent;
 }
+
 
 .input-group-rounded .input-group-field {
     border-radius: 5000px 0 0 5000px;
@@ -58,4 +66,17 @@ footer{
 footer.columns{
   margin-left: 0%;
   margin-right: 0%;
+}
+#burger{
+  background-color: transparent;
+}
+#poster{
+  clip-rule: nonzero;
+}
+#actors{
+    height: 20%;
+    width: 20%;
+}
+#stars{
+  display:flex;
 }
