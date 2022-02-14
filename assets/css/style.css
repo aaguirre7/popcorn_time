@@ -1,7 +1,9 @@
 @import "normalize.css";
 html, body {
     height:100%;
-}  
+} 
+
+/* START OF HEADER SECTION */
 header{
     flex: 1;
     display:flex;
@@ -15,29 +17,28 @@ header{
     width: 100%;
     
 }  
-
 @media screen and (max-width: 1023px){
   .navbar-menu{
   background-color: black;
   }
 }
-
-
-.navbar{
+ .navbar{
    background-color: transparent;
-}
-
+ }
 
 .input-group-rounded .input-group-field {
     border-radius: 5000px 0 0 5000px;
     padding-left: 1rem;
   }
   
-.input-group-rounded .input-group-button .button {
+  .input-group-rounded .input-group-button .button {
     border-radius: 0 5000px 5000px 0;
     font-size: 0.8rem;
   }
-main{
+
+ /* MAIN SECTION */
+
+ main{
     display: flex;
     flex-direction: column;
     background-color:black;
@@ -48,6 +49,7 @@ main{
     background-attachment:unset;
     height: 145rem;
 }  
+/* FOOTER SECTION */
 
 footer{
   background-color: rgb(140,18,13);
@@ -56,16 +58,18 @@ footer{
   background-size: contain cover;
   border-top: rgb(35, 48, 67);
 }
+footer.columns{
+  margin-left: 0%;
+  margin-right: 0%;
+} 
+
+
+/* SCRIPT CSS */
 #mymovies{
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
   margin-top:3rem;
-}
-
-footer.columns{
-  margin-left: 0%;
-  margin-right: 0%;
 }
 #burger{
   background-color: transparent;
