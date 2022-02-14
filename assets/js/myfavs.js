@@ -1,3 +1,5 @@
+
+
 function existingFav (movie){
     var myMovie  = movie;
     var myFav    = localStorage.getItem(myMovie);
@@ -20,13 +22,41 @@ function existingFav (movie){
 
 function saveAmovie(movie,movieName){
     window.localStorage.setItem(movie,movieName); 
-    $("#favsBar").append(`<button class="navbar-item has-text-white has-text-right" onclick="largeDescription(${movieName})" id="${movie}">
-    ${movieName}
-    </button>`)
+    var myMovies = [],
+    movies = Object.keys(localStorage),
+    index1 = movies.length;
+    var index2 = index1;
+    var index3 = index1;
+    $("#favsBar").html("");
+    if( index2 > 0 ){
+      while (index2 --){
+        myMovies.push(localStorage.getItem(movies[index2]));
+      }
+      for (x =0 ; x< index3 ; x++){
+        $("#favsBar").append(`<button class="navbar-item has-text-white has-text-right" id="${myMovies}">
+        ${myMovies[x]}
+        </button>`);
+      }
+    }
 };
 
 function removeAmovie (movie,movieName){
     window.localStorage.removeItem(movie,movieName);
-    var deleteMovie =document.getElementById(movie)
-    deleteMovie.remove();
+    var myMovies = [],
+    movies = Object.keys(localStorage),
+    index1 = movies.length;
+    var index2 = index1;
+    var index3 = index1;
+    $("#favsBar").html("");
+    if( index2 > 0 ){
+      while (index2 --){
+        myMovies.push(localStorage.getItem(movies[index2]));
+      }
+      for (x =0 ; x< index3 ; x++){
+        $("#favsBar").append(`<button class="navbar-item has-text-white has-text-right" id="${myMovies}">
+        ${myMovies[x]}
+        </button>`);
+      }
+    }
+ 
 };

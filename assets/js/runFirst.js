@@ -1,24 +1,35 @@
 // Javascript for everything that appears when you first load the page.
-
 const apiKimbd = "k_4s8hgj73";
 const apiKwmode = "h2LXbCztIcaw7kZ2ENKOWBrMpS0TnqoOccCqFF58";
 loadHome();
-
+favorites();
 // function to add favorites to local storage
 function favorites (){
   var myMovies = [],
   movies = Object.keys(localStorage),
-  i = movies.length;
-  
-  if( i < 0 ){
-    while (i --){
-      myMovies.push(localStorage.getItem(movies)[i]);
+  index1 = movies.length;
+  var index2 = index1;
+  var index3 = index1;
+  if( index2 > 0 ){
+    while (index2 --){
+      myMovies.push(localStorage.getItem(movies[index2]));
     }
-    
-    } 
+    for (x =0 ; x< index3 ; x++){
+      $("#favsBar").append(`<button class="navbar-item has-text-white has-text-right" id="${myMovies}">
+      ${myMovies[x]}
+      </button>`);
+    }
+  }
+ console.log("movie array", myMovies); 
 }
 // function that loads the currently trending top 10 movies in the US.
 function loadHome (){
+  $("#mymovies").html('');
+  $("#mymovies").append(`<div class="tile is-vertical is-11">
+    <div id="movieContainer" class="tile is-block-tablet is-flex-desktop container">
+      </div>
+    </div>
+    `)
   fetch('https://imdb-api.com/en/API/MostPopularMovies/'+apiKimbd+'')
       .then((response) => response.json())
       .then((data) => {
@@ -64,6 +75,7 @@ function loadHome (){
       .catch(error => {
           console.log('error', error);
       });
+      
 }
 
 
