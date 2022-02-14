@@ -113,10 +113,28 @@ function largeDescription(movie){
                <!-- Content -->
              </ol>
            </article>
+           <article id="mySaves" class="tile is-child notification">
+              <!-- favorites buttons --> 
+           </article>
           </div>
            </div>`)
-        
-        
+        existingFav(movie);
+        $(document).ready(function(){
+          $("#saveMe").click(function(){
+              console.log("save to favorites");
+              console.log(movie);
+              var movieName = list.title;
+              saveAmovie(movie,movieName);
+          })
+          $(document).ready(function(){
+            $("#removeMe").click(function(){
+                console.log("deleted from favorites");
+                console.log(movie);
+                var movieName = list.title;
+                removeAmovie(movie,movieName);
+            })
+        })
+      })
         for (x =0 ; x < listSize ; x ++){
           $("#stars").append(`
           <figure id="actors" class="box image is-16x16">
